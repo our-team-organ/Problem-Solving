@@ -31,3 +31,12 @@ for i in range(1, 11):
 n=input("Enter number:")
 length=len(n)
 print(length)
+#22.Reverse digits of a number.
+#23. Palindrome Number. Check if number reads same forward/backward.
+#24. Sum of Digits. Add all digits.
+#25. Product of Digits. Multiply all digits.
+#26. Armstrong Number. Check if sum of cube of digits equals number.
+#27. Fibonacci Series. Print first N Fibonacci numbers.
+#28. Count Even & Odd Digits. Count even and odd digits separately.
+#29. Largest Digit. Find largest digit in a number.
+#30. Power (a^b). Calculate power using loop.
