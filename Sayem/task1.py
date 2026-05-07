@@ -102,4 +102,4 @@ if (marks >= 40 and attendance >= 75):
     print("Pass")
 else:
     print("Fail")
-#Emraner nani
+#Imraner nani
