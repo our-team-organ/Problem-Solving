@@ -32,7 +32,6 @@ n=input("Enter number:")
 length=len(n)
 print(length)
 #22.Reverse digits of a number.
-#22.Reverse digits of a number.
 n=int(input("Enter a number:"))
 reverse=0;
 for i in range(len(str(n))):
@@ -43,7 +42,6 @@ print(reverse)
 #23. Palindrome Number. Check if number reads same forward/backward.
 
 #24. Sum of Digits. Add all digits.
-#22.Reverse digits of a number.
 n=int(input("Enter a number:"))
 sum=0;
 for i in range(len(str(n))):
