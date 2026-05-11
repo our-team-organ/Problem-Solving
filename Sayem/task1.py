@@ -75,7 +75,6 @@ else:
     print("Lowercase")
 
 
-
 #10.    Profit/Loss: CP 100, SP 120 → Profit
 
 
