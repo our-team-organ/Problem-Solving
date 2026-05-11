@@ -61,10 +61,23 @@ if(numb % 5 == 0 and numb % 11 == 0):
 else:
     print("Not divisible")
 #8.    Vowel/Consonant: a → Vowel | b → Consonant
+ch=input("Enter a character:")
+if(ch=="aeiouAEIOU"):
+    print("Vowel")
+else:
+    print("Consonent")
 
 #9.    Case Detect: A → Uppercase | z → Lowercase
+ch=input("Enter a character:")
+if(ch>='A'and ch<='Z'):
+    print("Uppercase")
+else:
+    print("Lowercase")
+
+
 
 #10.    Profit/Loss: CP 100, SP 120 → Profit
+
 
 #11.    Temp Class: 35 → Hot | 25 → Cold
 temp=int(input("Enter temparature: "))
@@ -93,6 +106,13 @@ if (F+S >T and F+T > S and S+T >F):
 else:
     print("Invalid Triangle")
 #14. Calculator: 5 + 3 → 8 | 10 - 2 → 8
+n1 = int(input("Enter first number: "))
+n2 = int(input("Enter second number: "))
+
+print("{} + {} = {}".format(n1,n2,(n1+n2)))
+print("{} - {} = {}".format(n1,n2,(n1-n2)))
+print("{} * {} = {}".format(n1,n2,(n1*n2)))
+print("{} / {} = {}".format(n1,n2,(n1/n2)))
 
 #15. Pass/Fail: Marks 60, Atten. 60% → Fail (Req. 40 & 75%)
 marks=int(input("Enter marks: "))
@@ -102,4 +122,3 @@ if (marks >= 40 and attendance >= 75):
     print("Pass")
 else:
     print("Fail")
-#Imraner nani
