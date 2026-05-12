@@ -26,11 +26,13 @@ print(fact)
 n = int(input("Enter a number: "))
 
 for i in range(1, 11):
-    print(n*i)
+    print(n*i,end="")
+
 #21. Count total digits in a number.
 n=input("Enter number:")
 length=len(n)
 print(length)
+
 #22.Reverse digits of a number.
 n=int(input("Enter a number:"))
 reverse=0;
@@ -49,12 +51,18 @@ for i in range(len(str(n))):
     n=n//10
 print(sum)
 #25. Product of Digits. Multiply all digits.
-
+n = int(input("Enter a number: "))
+product = 1
+for i in range(1, n+1):
+    product*= i
+print(product)
 #26. Armstrong Number. Check if sum of cube of digits equals number.
 
 #27. Fibonacci Series. Print first N Fibonacci numbers.
 
 #28. Count Even & Odd Digits. Count even and odd digits separately.
+n=int(input("Enter a number:"))
+
 
 #29. Largest Digit. Find largest digit in a number.
 
