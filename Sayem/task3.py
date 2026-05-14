@@ -9,8 +9,16 @@ else:
             break
     else:
         print("Prime")
-#32. Print All Prime Numbers (1 to N).
 
+#32. Print All Prime Numbers (1 to N).
+n = int(input("Enter a number: "))
+
+for num in range(2, n+1):
+    for i in range(2, num):
+        if num % i == 0:
+            break
+    else:
+        print(num, end=" ")    # ← print if prime
 #33. GCD (Greatest Common Divisor).
 
 #34. LCM (Least Common Multiple). 
@@ -26,8 +34,33 @@ else:
 #39. Menu Driven Calculator
 
 #40. Login System (3 Attempts)
+password = 1234
+time = 3
+while time > 0:
+    n = int(input("Enter password: "))
+    if password == n:
+        print("Login successful")
+        break
+    else:
+        time -= 1
+        print(f"Wrong! {time} attempts remaining")
 
+if time == 0:
+    print("Account locked!")
 #41. Guessing Game (3 Attempts)
+import random
+random=random.randint(1,10)
+for i in range(3):
+    n=int(input("Enter number:"))
+    if(random==n):
+        print("You Win")
+    elif(random>n):
+        print("please enter a higher number")
+    elif(random<n):
+        print("please enter a lower number")
+    else:
+        print("You loss")
+print("The random number is:",random)
 
 #42. Digit Frequency
 
@@ -36,3 +69,37 @@ else:
 #44. Sum of Even Numbers (1 to N)
 
 #45. Pattern Printing ⭐
+
+#Strong password
+password = input("Enter password: ")
+
+has_upper=False
+has_lower=False
+has_digit=False
+has_special=False
+
+for i in password:
+    if i.isupper():
+        has_upper=True
+    elif i.islower():
+        has_lower=True
+    elif i.isdigit():
+        has_digit=True
+    else:
+        has_special=True     
+
+if has_upper and has_lower and has_digit and has_special and len(password) >= 8:
+    print("Strong password ")
+else:
+    print("Weak password ")
+    
+    if not has_upper:
+        print("— Add uppercase letter (A-Z)")
+    if not has_lower:
+        print("— Add lowercase letter (a-z)")
+    if not has_digit:
+        print("— Add a number (0-9)")
+    if not has_special:
+        print("— Add special character (!@#$...)")
+    if len(password) < 8:
+        print("— Minimum 8 characters required")
