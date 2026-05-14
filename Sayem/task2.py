@@ -42,7 +42,11 @@ for i in range(len(str(n))):
 print(reverse)
      
 #23. Palindrome Number. Check if number reads same forward/backward.
-
+input("Enter:")
+if(n==n[::-1]):
+    print("palindrome")
+else:
+    print("Not palindrome")
 #24. Sum of Digits. Add all digits.
 n=int(input("Enter a number:"))
 sum=0;
@@ -50,20 +54,34 @@ for i in range(len(str(n))):
     sum=sum+n%10
     n=n//10
 print(sum)
+
 #25. Product of Digits. Multiply all digits.
 n = int(input("Enter a number: "))
 product = 1
 for i in range(1, n+1):
     product*= i
 print(product)
+
 #26. Armstrong Number. Check if sum of cube of digits equals number.
 
 #27. Fibonacci Series. Print first N Fibonacci numbers.
 
 #28. Count Even & Odd Digits. Count even and odd digits separately.
-n=int(input("Enter a number:"))
-
+n=input("Enter a number:")
+even=odd=0;
+for i in n:
+    if(n%2==0):
+        even+=1
+    else:
+        odd+=1
+print("Even:",even)
+print("odd:",odd)
 
 #29. Largest Digit. Find largest digit in a number.
-
+n=input("Enter a number:")
+largest=0;
+for i in n:
+    if(int(i)>largest):
+        largest=int(i)
+print("Largest Number:",largest)
 #30. Power (a^b). Calculate power using loop.
