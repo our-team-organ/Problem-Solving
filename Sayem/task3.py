@@ -47,19 +47,21 @@ while time > 0:
 
 if time == 0:
     print("Account locked!")
+
 #41. Guessing Game (3 Attempts)
 import random
-random=random.randint(1,10)
+random=random.randint(1,20)
 for i in range(3):
     n=int(input("Enter number:"))
-    if(random==n):
+    if random==n:
         print("You Win")
-    elif(random>n):
-        print("please enter a higher number")
-    elif(random<n):
-        print("please enter a lower number")
+        break
     else:
-        print("You loss")
+        if(random>n):
+            print("You loss, Enter a higher number")
+        elif(random<n):
+          print("You loss,Enter a lower number")
+
 print("The random number is:",random)
 
 #42. Digit Frequency
