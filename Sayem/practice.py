@@ -1,14 +1,11 @@
-import random
-random=random.randint(1,20)
-for i in range(5):
-    n=int(input("Enter number:"))
-    if random==n:
-        print("You Win")
-        break
-    else:
-        if(random>n):
-            print("You loss, Enter a higher number")
-        elif(random<n):
-          print("You loss,Enter a lower number")
+n=int(input())
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(j,end="")
+    print()
 
-print("The random number is:",random)
+n = int(input())
+for i in range(n, 0, -1):
+    for j in range(1, i+1):
+        print(j, end="")
+    print()

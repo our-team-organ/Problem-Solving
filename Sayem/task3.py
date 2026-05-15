@@ -69,8 +69,27 @@ print("The random number is:",random)
 #43. Second Largest (3 Numbers)
 
 #44. Sum of Even Numbers (1 to N)
+evensum=0
+n=int(input("Enter a number:"))
+for i in range(0,n+1):
+    if(i%2==0):
+        evensum+=i
+print("Sum of even:",evensum)
+
 
 #45. Pattern Printing ⭐
+n=int(input())
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(j,end="")
+    print()
+
+n = int(input())
+for i in range(n, 0, -1):
+    for j in range(1, i+1):
+        print(j, end="")
+    print()
+
 
 #Strong password
 password = input("Enter password: ")
